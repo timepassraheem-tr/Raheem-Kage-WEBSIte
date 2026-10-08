@@ -1,0 +1,26 @@
+/* ── ThreeUI shared styles ──────────────────────────────────────────────── */
+
+/**
+ * .shader-frame
+ * The host container for a KageLandingPage (or any LandingPageFrame).
+ * Fill the viewport, clip overflow so the iframe cannot bleed into
+ * surrounding layout.
+ */
+.shader-frame {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/**
+ * .landing-page-frame
+ * Emitted by LandingPageFrame as the outer wrapper. Fills whatever box
+ * the parent assigns (usually the full .shader-frame).
+ */
+.landing-page-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
